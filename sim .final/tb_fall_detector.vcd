@@ -1,0 +1,548 @@
+$date
+	Mon Oct 12 11:45:43 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_fall_detector $end
+$var reg 1 ! clk $end
+$var reg 1 " resetn $end
+$var reg 1 # sample_valid $end
+$var reg 16 $ accel_x [15:0] $end
+$var reg 16 % accel_y [15:0] $end
+$var reg 16 & accel_z [15:0] $end
+$var wire 1 ' free_fall $end
+$var wire 1 ( impact $end
+$var wire 1 ) fall_detected $end
+$var wire 1 * magnitude_mg [31] $end
+$var wire 1 + magnitude_mg [30] $end
+$var wire 1 , magnitude_mg [29] $end
+$var wire 1 - magnitude_mg [28] $end
+$var wire 1 . magnitude_mg [27] $end
+$var wire 1 / magnitude_mg [26] $end
+$var wire 1 0 magnitude_mg [25] $end
+$var wire 1 1 magnitude_mg [24] $end
+$var wire 1 2 magnitude_mg [23] $end
+$var wire 1 3 magnitude_mg [22] $end
+$var wire 1 4 magnitude_mg [21] $end
+$var wire 1 5 magnitude_mg [20] $end
+$var wire 1 6 magnitude_mg [19] $end
+$var wire 1 7 magnitude_mg [18] $end
+$var wire 1 8 magnitude_mg [17] $end
+$var wire 1 9 magnitude_mg [16] $end
+$var wire 1 : magnitude_mg [15] $end
+$var wire 1 ; magnitude_mg [14] $end
+$var wire 1 < magnitude_mg [13] $end
+$var wire 1 = magnitude_mg [12] $end
+$var wire 1 > magnitude_mg [11] $end
+$var wire 1 ? magnitude_mg [10] $end
+$var wire 1 @ magnitude_mg [9] $end
+$var wire 1 A magnitude_mg [8] $end
+$var wire 1 B magnitude_mg [7] $end
+$var wire 1 C magnitude_mg [6] $end
+$var wire 1 D magnitude_mg [5] $end
+$var wire 1 E magnitude_mg [4] $end
+$var wire 1 F magnitude_mg [3] $end
+$var wire 1 G magnitude_mg [2] $end
+$var wire 1 H magnitude_mg [1] $end
+$var wire 1 I magnitude_mg [0] $end
+
+$scope task sample $end
+$var reg 16 J x [15:0] $end
+$var reg 16 K y [15:0] $end
+$var reg 16 L z [15:0] $end
+$upscope $end
+
+$scope module dut $end
+$var parameter 32 M ONE_G $end
+$var parameter 32 N FREE_FALL_G $end
+$var parameter 32 O IMPACT_G $end
+$var parameter 32 P HOLD_CYCLES $end
+$var wire 1 Q clk $end
+$var wire 1 R resetn $end
+$var wire 1 S accel_x [15] $end
+$var wire 1 T accel_x [14] $end
+$var wire 1 U accel_x [13] $end
+$var wire 1 V accel_x [12] $end
+$var wire 1 W accel_x [11] $end
+$var wire 1 X accel_x [10] $end
+$var wire 1 Y accel_x [9] $end
+$var wire 1 Z accel_x [8] $end
+$var wire 1 [ accel_x [7] $end
+$var wire 1 \ accel_x [6] $end
+$var wire 1 ] accel_x [5] $end
+$var wire 1 ^ accel_x [4] $end
+$var wire 1 _ accel_x [3] $end
+$var wire 1 ` accel_x [2] $end
+$var wire 1 a accel_x [1] $end
+$var wire 1 b accel_x [0] $end
+$var wire 1 c accel_y [15] $end
+$var wire 1 d accel_y [14] $end
+$var wire 1 e accel_y [13] $end
+$var wire 1 f accel_y [12] $end
+$var wire 1 g accel_y [11] $end
+$var wire 1 h accel_y [10] $end
+$var wire 1 i accel_y [9] $end
+$var wire 1 j accel_y [8] $end
+$var wire 1 k accel_y [7] $end
+$var wire 1 l accel_y [6] $end
+$var wire 1 m accel_y [5] $end
+$var wire 1 n accel_y [4] $end
+$var wire 1 o accel_y [3] $end
+$var wire 1 p accel_y [2] $end
+$var wire 1 q accel_y [1] $end
+$var wire 1 r accel_y [0] $end
+$var wire 1 s accel_z [15] $end
+$var wire 1 t accel_z [14] $end
+$var wire 1 u accel_z [13] $end
+$var wire 1 v accel_z [12] $end
+$var wire 1 w accel_z [11] $end
+$var wire 1 x accel_z [10] $end
+$var wire 1 y accel_z [9] $end
+$var wire 1 z accel_z [8] $end
+$var wire 1 { accel_z [7] $end
+$var wire 1 | accel_z [6] $end
+$var wire 1 } accel_z [5] $end
+$var wire 1 ~ accel_z [4] $end
+$var wire 1 !! accel_z [3] $end
+$var wire 1 "! accel_z [2] $end
+$var wire 1 #! accel_z [1] $end
+$var wire 1 $! accel_z [0] $end
+$var wire 1 %! sample_valid $end
+$var reg 1 &! free_fall $end
+$var reg 1 '! impact $end
+$var reg 1 (! fall_detected $end
+$var reg 32 )! magnitude_mg [31:0] $end
+$var reg 32 *! hold_count [31:0] $end
+$var reg 32 +! mag_l1 [31:0] $end
+$var reg 16 ,! ax_abs [15:0] $end
+$var reg 16 -! ay_abs [15:0] $end
+$var reg 16 .! az_abs [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+b0 $
+b0 %
+b0 &
+x&!
+x'!
+x(!
+bx )!
+bx *!
+b0 +!
+b0 ,!
+b0 -!
+b0 .!
+bx J
+bx K
+bx L
+b10000000000000 M
+b100110011001 N
+b11000000000000 O
+b1100 P
+x'
+x(
+x)
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+0Q
+0R
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0%!
+$end
+#5000
+1!
+1Q
+0&!
+0'!
+0(!
+b0 )!
+b0 *!
+0'
+0(
+0)
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+#10000
+0!
+0Q
+#15000
+1!
+1Q
+#20000
+0!
+0Q
+#25000
+1!
+1Q
+#30000
+0!
+0Q
+1"
+b0 J
+b0 K
+b10000000000000 L
+1R
+#35000
+1!
+1Q
+#40000
+0!
+0Q
+b10000000000000 &
+1#
+1%!
+1u
+b10000000000000 .!
+b10000000000000 +!
+#45000
+1!
+1Q
+b1111101000 )!
+1F
+1D
+1C
+1B
+1A
+1@
+#50000
+0!
+0Q
+0#
+0%!
+#51000
+b1100100 J
+b10010110 K
+b11001000 L
+#55000
+1!
+1Q
+#60000
+0!
+0Q
+b1100100 $
+b10010110 %
+b11001000 &
+1#
+1%!
+1!!
+1|
+1{
+0u
+1q
+1p
+1n
+1k
+1`
+1]
+1\
+b1100100 ,!
+b10010110 -!
+b11001000 .!
+b111000010 +!
+#65000
+1!
+1Q
+b110110 )!
+1&!
+1H
+1G
+0F
+1E
+0C
+0B
+0A
+0@
+1'
+#70000
+0!
+0Q
+0#
+0%!
+#71000
+b11111010000000 J
+b10111011100000 K
+b1111101000000 L
+#75000
+1!
+1Q
+#80000
+0!
+0Q
+b11111010000000 $
+b10111011100000 %
+b1111101000000 &
+1#
+1%!
+0!!
+0{
+1z
+1y
+1x
+1w
+1v
+0q
+0p
+0n
+1m
+1l
+1i
+1h
+1g
+1e
+0`
+0]
+0\
+1[
+1Y
+1X
+1W
+1V
+1U
+b11111010000000 ,!
+b10111011100000 -!
+b1111101000000 .!
+b1000110010100000 +!
+#85000
+1!
+1Q
+b1000100101010 )!
+1'!
+1(!
+b1100 *!
+0&!
+0G
+1F
+0E
+1A
+1=
+1(
+1)
+0'
+#90000
+0!
+0Q
+0#
+0%!
+#95000
+1!
+1Q
+0'!
+b1011 *!
+0(
+#100000
+0!
+0Q
+#105000
+1!
+1Q
+b1010 *!
+#110000
+0!
+0Q
+#115000
+1!
+1Q
+b1001 *!
+#120000
+0!
+0Q
+#125000
+1!
+1Q
+b1000 *!
+#130000
+0!
+0Q
+#135000
+1!
+1Q
+b111 *!
+#140000
+0!
+0Q
+#145000
+1!
+1Q
+b110 *!
+#150000
+0!
+0Q
+#155000
+1!
+1Q
+b101 *!
+#160000
+0!
+0Q
+#165000
+1!
+1Q
+b100 *!
+#170000
+0!
+0Q
+#175000
+1!
+1Q
+b11 *!
+#180000
+0!
+0Q
+#185000
+1!
+1Q
+b10 *!
+#190000
+0!
+0Q
+#195000
+1!
+1Q
+b1 *!
+#200000
+0!
+0Q
+#205000
+1!
+1Q
+b0 *!
+#210000
+0!
+0Q
+#215000
+1!
+1Q
+0(!
+0)
+#220000
+0!
+0Q
+#225000
+1!
+1Q
+#230000
+0!
+0Q
+#235000
+1!
+1Q
+#240000
+0!
+0Q

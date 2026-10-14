@@ -1,0 +1,594 @@
+$date
+	Mon Oct 12 11:55:28 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_fall_peripheral $end
+$var reg 1 ! clk $end
+$var reg 1 " resetn $end
+$var reg 1 # iomem_valid $end
+$var wire 1 $ iomem_ready $end
+$var reg 4 % iomem_wstrb [3:0] $end
+$var reg 32 & iomem_addr [31:0] $end
+$var reg 32 ' iomem_wdata [31:0] $end
+$var wire 1 ( iomem_rdata [31] $end
+$var wire 1 ) iomem_rdata [30] $end
+$var wire 1 * iomem_rdata [29] $end
+$var wire 1 + iomem_rdata [28] $end
+$var wire 1 , iomem_rdata [27] $end
+$var wire 1 - iomem_rdata [26] $end
+$var wire 1 . iomem_rdata [25] $end
+$var wire 1 / iomem_rdata [24] $end
+$var wire 1 0 iomem_rdata [23] $end
+$var wire 1 1 iomem_rdata [22] $end
+$var wire 1 2 iomem_rdata [21] $end
+$var wire 1 3 iomem_rdata [20] $end
+$var wire 1 4 iomem_rdata [19] $end
+$var wire 1 5 iomem_rdata [18] $end
+$var wire 1 6 iomem_rdata [17] $end
+$var wire 1 7 iomem_rdata [16] $end
+$var wire 1 8 iomem_rdata [15] $end
+$var wire 1 9 iomem_rdata [14] $end
+$var wire 1 : iomem_rdata [13] $end
+$var wire 1 ; iomem_rdata [12] $end
+$var wire 1 < iomem_rdata [11] $end
+$var wire 1 = iomem_rdata [10] $end
+$var wire 1 > iomem_rdata [9] $end
+$var wire 1 ? iomem_rdata [8] $end
+$var wire 1 @ iomem_rdata [7] $end
+$var wire 1 A iomem_rdata [6] $end
+$var wire 1 B iomem_rdata [5] $end
+$var wire 1 C iomem_rdata [4] $end
+$var wire 1 D iomem_rdata [3] $end
+$var wire 1 E iomem_rdata [2] $end
+$var wire 1 F iomem_rdata [1] $end
+$var wire 1 G iomem_rdata [0] $end
+$var reg 1 H fall_detected $end
+$var reg 1 I free_fall $end
+$var reg 1 J impact $end
+$var reg 32 K magnitude_mg [31:0] $end
+$var reg 16 L accel_x [15:0] $end
+$var reg 16 M accel_y [15:0] $end
+$var reg 16 N accel_z [15:0] $end
+
+$scope task readreg $end
+$var reg 32 O address [31:0] $end
+$var reg 32 P expected [31:0] $end
+$upscope $end
+
+$scope module dut $end
+$var wire 1 Q clk $end
+$var wire 1 R resetn $end
+$var wire 1 S iomem_valid $end
+$var reg 1 T iomem_ready $end
+$var wire 1 U iomem_wstrb [3] $end
+$var wire 1 V iomem_wstrb [2] $end
+$var wire 1 W iomem_wstrb [1] $end
+$var wire 1 X iomem_wstrb [0] $end
+$var wire 1 Y iomem_addr [31] $end
+$var wire 1 Z iomem_addr [30] $end
+$var wire 1 [ iomem_addr [29] $end
+$var wire 1 \ iomem_addr [28] $end
+$var wire 1 ] iomem_addr [27] $end
+$var wire 1 ^ iomem_addr [26] $end
+$var wire 1 _ iomem_addr [25] $end
+$var wire 1 ` iomem_addr [24] $end
+$var wire 1 a iomem_addr [23] $end
+$var wire 1 b iomem_addr [22] $end
+$var wire 1 c iomem_addr [21] $end
+$var wire 1 d iomem_addr [20] $end
+$var wire 1 e iomem_addr [19] $end
+$var wire 1 f iomem_addr [18] $end
+$var wire 1 g iomem_addr [17] $end
+$var wire 1 h iomem_addr [16] $end
+$var wire 1 i iomem_addr [15] $end
+$var wire 1 j iomem_addr [14] $end
+$var wire 1 k iomem_addr [13] $end
+$var wire 1 l iomem_addr [12] $end
+$var wire 1 m iomem_addr [11] $end
+$var wire 1 n iomem_addr [10] $end
+$var wire 1 o iomem_addr [9] $end
+$var wire 1 p iomem_addr [8] $end
+$var wire 1 q iomem_addr [7] $end
+$var wire 1 r iomem_addr [6] $end
+$var wire 1 s iomem_addr [5] $end
+$var wire 1 t iomem_addr [4] $end
+$var wire 1 u iomem_addr [3] $end
+$var wire 1 v iomem_addr [2] $end
+$var wire 1 w iomem_addr [1] $end
+$var wire 1 x iomem_addr [0] $end
+$var wire 1 y iomem_wdata [31] $end
+$var wire 1 z iomem_wdata [30] $end
+$var wire 1 { iomem_wdata [29] $end
+$var wire 1 | iomem_wdata [28] $end
+$var wire 1 } iomem_wdata [27] $end
+$var wire 1 ~ iomem_wdata [26] $end
+$var wire 1 !! iomem_wdata [25] $end
+$var wire 1 "! iomem_wdata [24] $end
+$var wire 1 #! iomem_wdata [23] $end
+$var wire 1 $! iomem_wdata [22] $end
+$var wire 1 %! iomem_wdata [21] $end
+$var wire 1 &! iomem_wdata [20] $end
+$var wire 1 '! iomem_wdata [19] $end
+$var wire 1 (! iomem_wdata [18] $end
+$var wire 1 )! iomem_wdata [17] $end
+$var wire 1 *! iomem_wdata [16] $end
+$var wire 1 +! iomem_wdata [15] $end
+$var wire 1 ,! iomem_wdata [14] $end
+$var wire 1 -! iomem_wdata [13] $end
+$var wire 1 .! iomem_wdata [12] $end
+$var wire 1 /! iomem_wdata [11] $end
+$var wire 1 0! iomem_wdata [10] $end
+$var wire 1 1! iomem_wdata [9] $end
+$var wire 1 2! iomem_wdata [8] $end
+$var wire 1 3! iomem_wdata [7] $end
+$var wire 1 4! iomem_wdata [6] $end
+$var wire 1 5! iomem_wdata [5] $end
+$var wire 1 6! iomem_wdata [4] $end
+$var wire 1 7! iomem_wdata [3] $end
+$var wire 1 8! iomem_wdata [2] $end
+$var wire 1 9! iomem_wdata [1] $end
+$var wire 1 :! iomem_wdata [0] $end
+$var reg 32 ;! iomem_rdata [31:0] $end
+$var wire 1 <! fall_detected $end
+$var wire 1 =! free_fall $end
+$var wire 1 >! impact $end
+$var wire 1 ?! magnitude_mg [31] $end
+$var wire 1 @! magnitude_mg [30] $end
+$var wire 1 A! magnitude_mg [29] $end
+$var wire 1 B! magnitude_mg [28] $end
+$var wire 1 C! magnitude_mg [27] $end
+$var wire 1 D! magnitude_mg [26] $end
+$var wire 1 E! magnitude_mg [25] $end
+$var wire 1 F! magnitude_mg [24] $end
+$var wire 1 G! magnitude_mg [23] $end
+$var wire 1 H! magnitude_mg [22] $end
+$var wire 1 I! magnitude_mg [21] $end
+$var wire 1 J! magnitude_mg [20] $end
+$var wire 1 K! magnitude_mg [19] $end
+$var wire 1 L! magnitude_mg [18] $end
+$var wire 1 M! magnitude_mg [17] $end
+$var wire 1 N! magnitude_mg [16] $end
+$var wire 1 O! magnitude_mg [15] $end
+$var wire 1 P! magnitude_mg [14] $end
+$var wire 1 Q! magnitude_mg [13] $end
+$var wire 1 R! magnitude_mg [12] $end
+$var wire 1 S! magnitude_mg [11] $end
+$var wire 1 T! magnitude_mg [10] $end
+$var wire 1 U! magnitude_mg [9] $end
+$var wire 1 V! magnitude_mg [8] $end
+$var wire 1 W! magnitude_mg [7] $end
+$var wire 1 X! magnitude_mg [6] $end
+$var wire 1 Y! magnitude_mg [5] $end
+$var wire 1 Z! magnitude_mg [4] $end
+$var wire 1 [! magnitude_mg [3] $end
+$var wire 1 \! magnitude_mg [2] $end
+$var wire 1 ]! magnitude_mg [1] $end
+$var wire 1 ^! magnitude_mg [0] $end
+$var wire 1 _! accel_x [15] $end
+$var wire 1 `! accel_x [14] $end
+$var wire 1 a! accel_x [13] $end
+$var wire 1 b! accel_x [12] $end
+$var wire 1 c! accel_x [11] $end
+$var wire 1 d! accel_x [10] $end
+$var wire 1 e! accel_x [9] $end
+$var wire 1 f! accel_x [8] $end
+$var wire 1 g! accel_x [7] $end
+$var wire 1 h! accel_x [6] $end
+$var wire 1 i! accel_x [5] $end
+$var wire 1 j! accel_x [4] $end
+$var wire 1 k! accel_x [3] $end
+$var wire 1 l! accel_x [2] $end
+$var wire 1 m! accel_x [1] $end
+$var wire 1 n! accel_x [0] $end
+$var wire 1 o! accel_y [15] $end
+$var wire 1 p! accel_y [14] $end
+$var wire 1 q! accel_y [13] $end
+$var wire 1 r! accel_y [12] $end
+$var wire 1 s! accel_y [11] $end
+$var wire 1 t! accel_y [10] $end
+$var wire 1 u! accel_y [9] $end
+$var wire 1 v! accel_y [8] $end
+$var wire 1 w! accel_y [7] $end
+$var wire 1 x! accel_y [6] $end
+$var wire 1 y! accel_y [5] $end
+$var wire 1 z! accel_y [4] $end
+$var wire 1 {! accel_y [3] $end
+$var wire 1 |! accel_y [2] $end
+$var wire 1 }! accel_y [1] $end
+$var wire 1 ~! accel_y [0] $end
+$var wire 1 !" accel_z [15] $end
+$var wire 1 "" accel_z [14] $end
+$var wire 1 #" accel_z [13] $end
+$var wire 1 $" accel_z [12] $end
+$var wire 1 %" accel_z [11] $end
+$var wire 1 &" accel_z [10] $end
+$var wire 1 '" accel_z [9] $end
+$var wire 1 (" accel_z [8] $end
+$var wire 1 )" accel_z [7] $end
+$var wire 1 *" accel_z [6] $end
+$var wire 1 +" accel_z [5] $end
+$var wire 1 ," accel_z [4] $end
+$var wire 1 -" accel_z [3] $end
+$var wire 1 ." accel_z [2] $end
+$var wire 1 /" accel_z [1] $end
+$var wire 1 0" accel_z [0] $end
+$var wire 1 1" selected $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+b0 %
+b0 &
+b0 '
+1H
+0I
+1J
+b100111000100 K
+b11111010000000 L
+b1101000100100000 M
+b1111101000000 N
+xT
+bx ;!
+bx O
+bx P
+x$
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+01"
+0Q
+0R
+0S
+0X
+0W
+0V
+0U
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+02!
+01!
+00!
+0/!
+0.!
+0-!
+0,!
+0+!
+0*!
+0)!
+0(!
+0'!
+0&!
+0%!
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+1<!
+0=!
+1>!
+0^!
+0]!
+1\!
+0[!
+0Z!
+0Y!
+1X!
+1W!
+1V!
+0U!
+0T!
+1S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0n!
+0m!
+0l!
+0k!
+0j!
+0i!
+0h!
+1g!
+0f!
+1e!
+1d!
+1c!
+1b!
+1a!
+0`!
+0_!
+0~!
+0}!
+0|!
+0{!
+0z!
+1y!
+0x!
+0w!
+1v!
+0u!
+0t!
+0s!
+1r!
+0q!
+1p!
+1o!
+00"
+0/"
+0."
+0-"
+0,"
+0+"
+1*"
+0)"
+1("
+1'"
+1&"
+1%"
+1$"
+0#"
+0""
+0!"
+$end
+#5000
+1!
+1Q
+0T
+b0 ;!
+0$
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+#10000
+0!
+0Q
+#15000
+1!
+1Q
+#20000
+0!
+0Q
+1"
+b100000000000000000000000000 O
+b1001110001000000000000000101 P
+1R
+#25000
+1!
+1Q
+#30000
+0!
+0Q
+b100000000000000000000000000 &
+1#
+1^
+1S
+11"
+#35000
+1!
+1Q
+1T
+b1001110001000000000000000101 ;!
+1$
+1G
+1E
+15
+11
+10
+1/
+1,
+#40000
+0!
+0Q
+0#
+b100000000000000000000000100 O
+b11111010000000 P
+0S
+01"
+#45000
+1!
+1Q
+0T
+0$
+#50000
+0!
+0Q
+b100000000000000000000000100 &
+1#
+1v
+1S
+11"
+#55000
+1!
+1Q
+1T
+b11111010000000 ;!
+1$
+0G
+0E
+1@
+1>
+1=
+1<
+1;
+1:
+05
+01
+00
+0/
+0,
+#60000
+0!
+0Q
+0#
+b100000000000000000000001000 O
+b11111010000001101000100100000 P
+0S
+01"
+#65000
+1!
+1Q
+0T
+0$
+#70000
+0!
+0Q
+b100000000000000000000001000 &
+1#
+0v
+1u
+1S
+11"
+#75000
+1!
+1Q
+1T
+b11111010000001101000100100000 ;!
+1$
+1B
+0@
+1?
+0>
+0=
+0<
+0:
+19
+18
+11
+1/
+1.
+1-
+1,
+1+
+#80000
+0!
+0Q
+0#

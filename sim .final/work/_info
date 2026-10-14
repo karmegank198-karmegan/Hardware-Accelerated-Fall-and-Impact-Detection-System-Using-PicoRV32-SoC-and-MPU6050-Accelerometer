@@ -1,0 +1,529 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/picorv32_fall_final/s2
+vfall_detector
+Z0 !s110 1791785633
+!i10b 1
+!s100 :GdXiUL0?m6K?@zNzizd41
+I;8:AV=W2E;e`I5O_9e]ao0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/sim .final
+Z3 w1791785202
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_detector.v
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_detector.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1791785633.000000
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_detector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_detector.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vfall_fpga_top
+Z8 !s110 1791903417
+!i10b 1
+!s100 `T7XPWeeVf0FUbOm5BaJf2
+IJ<@o7UN:V9Rd9dO9z:PN72
+R1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_fpga_top.v
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_fpga_top.v
+L0 5
+R4
+r1
+!s85 0
+31
+Z9 !s108 1791903417.000000
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_fpga_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_fpga_top.v|
+!i113 1
+R6
+R7
+vfall_peripheral
+Z10 !s110 1791786189
+!i10b 1
+!s100 ljcKGEE3Ub6JQ7B>jLPXo1
+I^JVklooEfGmG7GiX`ekFA2
+R1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_peripheral.v
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_peripheral.v
+L0 8
+R4
+r1
+!s85 0
+31
+Z11 !s108 1791786189.000000
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_peripheral.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/fall_peripheral.v|
+!i113 1
+R6
+R7
+vmpu6050_i2c
+Z12 !s110 1791786523
+!i10b 1
+!s100 X[eZ]b6N>n459ZSGn3nL[3
+IzNgj=4HEJ8M2eL:_eQ8fU1
+R1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/mpu6050_i2c.v
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/mpu6050_i2c.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1791786523.000000
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/mpu6050_i2c.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/mpu6050_i2c.v|
+!i113 1
+R6
+R7
+vpicorv32
+Z13 !s110 1791787199
+!i10b 1
+!s100 2_QMAWET8FA=>FZ6@2SG83
+IODkEi=;i19_F3_0P^:Z4h2
+R1
+R2
+R3
+Z14 8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picorv32.v
+Z15 FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picorv32.v
+L0 62
+R4
+r1
+!s85 0
+31
+Z16 !s108 1791787199.000000
+Z17 !s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picorv32.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picorv32.v|
+!i113 1
+R6
+R7
+vpicorv32_axi
+R13
+!i10b 1
+!s100 0KD94laE>CLM6z>gJ6Gf?0
+Il[_:?oKG91V^mOQzc>W9F2
+R1
+R2
+R3
+R14
+R15
+L0 2517
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicorv32_axi_adapter
+R13
+!i10b 1
+!s100 XlYhPZGGomec^T3<b;Nb01
+I>lIa8UgED;g_d`5U]PVbn1
+R1
+R2
+R3
+R14
+R15
+L0 2731
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicorv32_pcpi_div
+R13
+!i10b 1
+!s100 c::WWnDk_?[>FBYA@z`nf1
+I?3?^V0=^YAlgOgo8g5O2]2
+R1
+R2
+R3
+R14
+R15
+L0 2420
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicorv32_pcpi_fast_mul
+R13
+!i10b 1
+!s100 _di8FU]O0acRXjd8JKa=83
+IC@L2eBPNW_XURC15bK:m@1
+R1
+R2
+R3
+R14
+R15
+L0 2318
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicorv32_pcpi_mul
+R13
+!i10b 1
+!s100 jAz;Ln<CDOHD=5OencAz12
+I7zOjK=FTT2HlRX?D_3nAB0
+R1
+R2
+R3
+R14
+R15
+L0 2197
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicorv32_regs
+R13
+!i10b 1
+!s100 KdjfWCZ5Kmn9IR7QQW[Pf0
+IJiZzFS_;JQSUC?fAi^Wmk3
+R1
+R2
+R3
+R14
+R15
+L0 2174
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicorv32_wb
+R13
+!i10b 1
+!s100 P2nn4JS]=T4I:azmMFhm92
+I=;2SFE3SMaa4R7A0>?c4i3
+R1
+R2
+R3
+R14
+R15
+L0 2815
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+vpicosoc
+Z19 !s110 1791787198
+!i10b 1
+!s100 AWPDAjA`lbifeHfX]@1_73
+IW0mU9]8]ma;O[8JY]CHbK0
+R1
+R2
+R3
+Z20 8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc.v
+Z21 FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc.v
+L0 36
+R4
+r1
+!s85 0
+31
+Z22 !s108 1791787197.000000
+Z23 !s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc.v|
+!i113 1
+R6
+R7
+vpicosoc_fall
+R19
+!i10b 1
+!s100 8OJ?c?Oo:`FU2`kbQb>Vz3
+IbTmKX9?<=0_V4;S3`Sh^[0
+R1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc_fall.v
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc_fall.v
+L0 4
+R4
+r1
+!s85 0
+31
+Z25 !s108 1791787198.000000
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc_fall.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/picosoc_fall.v|
+!i113 1
+R6
+R7
+vpicosoc_mem
+R19
+!i10b 1
+!s100 6E>LWAJcGCilC_`;@Y`@<3
+I::AdL`dHCV4Mbk[H;2]S?1
+R1
+R2
+R3
+R20
+R21
+L0 243
+R4
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 1
+R6
+R7
+vpicosoc_regs
+R19
+!i10b 1
+!s100 ISRh@Ig33lF=Q37lXh2VZ2
+I8X=?GOMOZ1HOCW3GD`8Io3
+R1
+R2
+R3
+R20
+R21
+L0 225
+R4
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 1
+R6
+R7
+vsimpleuart
+R13
+!i10b 1
+!s100 3T?W<Ygj]MDe?^8E]>0zC1
+Ig2gVCSAgCM@dOOB[^LKe03
+R1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/simpleuart.v
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/simpleuart.v
+Z26 L0 20
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/simpleuart.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/simpleuart.v|
+!i113 1
+R6
+R7
+vspimemio
+R13
+!i10b 1
+!s100 U_9_ofalG2S3K8Hh8=o:h1
+IcG6:`c0?Gg36?`62bc9b?3
+R1
+R2
+R3
+Z27 8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/spimemio.v
+Z28 FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/spimemio.v
+R26
+R4
+r1
+!s85 0
+31
+R16
+Z29 !s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/spimemio.v|
+Z30 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/rtl/spimemio.v|
+!i113 1
+R6
+R7
+vspimemio_xfer
+R13
+!i10b 1
+!s100 8ZkTdcXhc6_`4hzG@623>3
+IbH5jG645_oC=XzSoZMQiK0
+R1
+R2
+R3
+R27
+R28
+L0 378
+R4
+r1
+!s85 0
+31
+R16
+R29
+R30
+!i113 1
+R6
+R7
+vtb_fall_detector
+Z31 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R0
+!i10b 1
+!s100 BMWP1`7m<LM>cc@N^h8Dn2
+IR2>HYC=GRg7zSIGIh1Xg`3
+R1
+!s105 tb_fall_detector_sv_unit
+S1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_detector.sv
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_detector.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_detector.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_detector.sv|
+!i113 1
+Z32 o-work work -sv
+R7
+vtb_fall_fpga_top
+R31
+R8
+!i10b 1
+!s100 oAFTE[fkPFNedlLe?QYUQ3
+IE>09DnSiK><SM>KS9LWVl2
+R1
+!s105 tb_fall_fpga_top_sv_unit
+S1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_fpga_top.sv
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_fpga_top.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_fpga_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_fpga_top.sv|
+!i113 1
+R32
+R7
+vtb_fall_peripheral
+R31
+R10
+!i10b 1
+!s100 D7U5cNLEb]kedl[9:OZVo3
+I=fV]4PfA:WQgCh=PcDNin0
+R1
+!s105 tb_fall_peripheral_sv_unit
+S1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_peripheral.sv
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_peripheral.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_peripheral.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_fall_peripheral.sv|
+!i113 1
+R32
+R7
+vtb_mpu6050_i2c
+R31
+R12
+!i10b 1
+!s100 T0c;<UhDEIla3[bA0G?hn2
+Ib6S>WPNbV5ng`:5P24]o22
+R1
+!s105 tb_mpu6050_i2c_sv_unit
+S1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_mpu6050_i2c.sv
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_mpu6050_i2c.sv
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1791786522.000000
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_mpu6050_i2c.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_mpu6050_i2c.sv|
+!i113 1
+R32
+R7
+vtb_picosoc_fall
+R31
+R19
+!i10b 1
+!s100 fbeN4`7Q9<^BBkfdKVBeJ3
+IjYkJ4@M:L?]Jj?he`kd>90
+R1
+!s105 tb_picosoc_fall_sv_unit
+S1
+R2
+R3
+8C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_picosoc_fall.sv
+FC:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_picosoc_fall.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_picosoc_fall.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/nitis/Downloads/zedboard_fall_detection_with_testbenches/zedboard_fall_detection_final/tb/tb_picosoc_fall.sv|
+!i113 1
+R32
+R7
