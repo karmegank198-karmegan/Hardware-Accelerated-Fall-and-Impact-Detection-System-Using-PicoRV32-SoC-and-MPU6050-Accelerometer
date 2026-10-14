@@ -31,8 +31,9 @@ The system consists of the following major components:
 5. **UART Interface:** Provides serial output for monitoring system information.
 6. **FPGA LEDs:** Indicate alarm, free-fall, and impact events.
 
-# System Flow
+### System Flow
 
+```text
          MPU6050 Sensor
                 |
           I²C Interface
